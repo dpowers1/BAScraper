@@ -20,7 +20,7 @@ with codecs.open(filename_with_extension, "w", encoding="utf8") as fh:
     fh.write("\n")
     counter = 1 
     for steps in soup.find_all("li", class_="step"):
-        step = "%i . %s" % (counter, steps.text)
+        step = "%i. %s" % (counter, steps.text)
         fh.write(step + "\n\n")
         
         counter += 1
